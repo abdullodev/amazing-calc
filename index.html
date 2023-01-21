@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <section class="calculator">
+      <nav>
+        <h2>Calculator</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="calc_input_box">
+          <input type="text" placeholder="0" id="calc_input" />
+        </div>
+        <div class="calc_btns">
+          <div class="calc">
+            <button type="button" onclick="backScape()">CE</button>
+            <button type="button" onclick="sqrtIldiz()">Sqrt</button>
+            <button type="button" class="calc_btn">(</button>
+            <button type="button" class="calc_btn">)</button>
+            <button type="button" class="calc_btn">%</button>
+            <button type="button" class="calc_btn">AC</button>
+          </div>
+
+          <div class="calc">
+            <button type="button" onclick="sinus()">sin</button>
+            <button type="button" onclick="logarifm()">log</button>
+            <button type="button" class="calc_btn">7</button>
+            <button type="button" class="calc_btn">8</button>
+            <button type="button" class="calc_btn">9</button>
+            <button type="button" class="calc_btn">/</button>
+          </div>
+
+          <div class="calc">
+            <button type="button" onclick="cosinus()">cos</button>
+            <button type="button" onclick="factorial()">x!</button>
+            <button type="button" class="calc_btn">4</button>
+            <button type="button" class="calc_btn">5</button>
+            <button type="button" class="calc_btn">6</button>
+            <button type="button" class="calc_btn">*</button>
+          </div>
+
+          <div class="calc">
+            <button type="button" onclick="tangenus()">tan</button>
+            <button type="button" onclick="powElement()">x^y</button>
+            <button type="button" class="calc_btn">1</button>
+            <button type="button" class="calc_btn">2</button>
+            <button type="button" class="calc_btn">3</button>
+            <button type="button" class="calc_btn">-</button>
+          </div>
+
+          <div class="calc">
+            <button type="button" onclick="e()">e</button>
+            <button type="button" onclick="pi()">pi</button>
+            <button type="button" class="calc_btn">0</button>
+            <button type="button" class="calc_btn">.</button>
+            <button type="button" class="calc_btn">+</button>
+            <button type="button" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./calc.js"></script>
+  </body>
+</html>
